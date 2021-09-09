@@ -1,6 +1,10 @@
 https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/
 
-
+Profile -> Personal -> projects , info, employment, ratings
+        -> Company -> projectst
+                    -info
+                    -employees
+                    -Ratings
 
 
 # Getting Started with Create React App
