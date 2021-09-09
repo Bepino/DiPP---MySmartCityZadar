@@ -1,4 +1,18 @@
 {
     "name" : "Hrvoje Hrvatko",
     "tag" : "@jehrvatko",
-    "image" : ""
+    "image" : "https://media.discordapp.net/attachments/761926636181651479/885563116350472252/PXL_20210909_163027656.jpg?width=585&height=585",
+    "social" : {
+        "Facebook" : "https://www.facebook.com",
+        "Twitter" : "https://www.twitter.com",
+        "Reddit" : "https://www.reddit.com",
+        "Github": "https://www.github.com"
+    },
+    "mail" : "hrvojehrvat@gmail.com",
+    "phone" : "+385 96 999 999 9999",
+    "aboutme" : "I am a small freelance developer from Donja Našica",
+    "projects": [
+        {"name": "RedditCrawler", "about":"A subbredit image crawler"},
+        {"name": "CovidBot", "about":"Daily cases information"}
+    ]
+}
