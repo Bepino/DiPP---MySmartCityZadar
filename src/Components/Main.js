@@ -6,6 +6,11 @@ import cUser from '../Data/CorporateUser.json';
 import projects from '../Data/projects.json';
 
 class Main extends React.Component {
+
+    nextPath(path) {
+        this.props.history.push(path);
+      }
+
     render(){
         
         return(
@@ -16,10 +21,10 @@ class Main extends React.Component {
                     <td width="100px"><div id="corpName">{cUser.name}</div></td>
                     <td><div className="nav-buttons">
                         <button className="nav-button">Home</button>
-                        <button className="nav-button">Challanges</button>
+                        <button className="nav-button">Challenges</button>
                         <button className="nav-button">Projects</button>
                     </div></td>
-                    <td><a href="#profile"><img src={pUser.image} alt="Pfp" id="smallpp"></img></a></td>
+                    <td><a href="#profile" onClick={() => this.nextPath('/profile')}><img src={pUser.image} alt="Pfp" id="smallpp"></img></a></td>
                 </tr>
             </table>
             <div id="projects">
@@ -30,7 +35,7 @@ class Main extends React.Component {
                         <p className="about">{projects.projects[0].about}</p>
                     </div></li>
                     <li><div className="project-block">
-                        <p className="name">{projects.projects[1].name}</p>
+                        <button className="nav-button" onClick={() => this.nextPath('/covidbot')}>{projects.projects[1].name}</button>
                         <p className="about">{projects.projects[1].about}</p>
                     </div></li>
                     <li><div className="project-block">
@@ -52,7 +57,7 @@ class Main extends React.Component {
                     <p className="title">Top projects and listings</p>
                     <ul>
                         <li><div className="challange-block">
-                            <p className="name challange-name">{projects.challanges[2].name}</p>
+                            <button className="nav-button" onClick={() => this.nextPath('/freebank')}>{projects.challanges[2].name}</button>
                             <p className="about">{projects.challanges[2].about}</p> 
                             <div className="rating-stars">{projects.challanges[2].rating}</div>
                         </div></li>

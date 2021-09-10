@@ -8,6 +8,10 @@ import projects from '../Data/projects.json';
 import user from '../Data/Users.json';
 
 class CovidBot extends React.Component {
+    nextPath(path) {
+        this.props.history.push(path);
+      }
+
     render() {
         return(
             <div id="base">
@@ -16,8 +20,8 @@ class CovidBot extends React.Component {
                         <td width="50px"><img id="logo" src={cUser.logo} alt="LOGO"></img></td>
                         <td width="100px"><div id="corpName">{cUser.name}</div></td>
                         <td><div className="nav-buttons">
-                            <button className="nav-button">Home</button>
-                            <button className="nav-button">Challanges</button>
+                            <button className="nav-button" onClick={() => this.nextPath('/main')}>Home</button>
+                            <button className="nav-button">Challenges</button>
                             <button className="nav-button">Projects</button>
                         </div></td>
                         <td><a href="#profile"><img src={pUser.image} alt="Pfp" id="smallpp"></img></a></td>
@@ -38,8 +42,8 @@ class CovidBot extends React.Component {
                             <span><b>Generated :</b> <i> A solid project with a lot of potential but lacks backing and support for payment</i></span>
                             <hr id="span"></hr>
                             <div className="project-block review">
-                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[0].name}</span> <span>3/5</span>
-                                <p>{user.profiles[0].review}</p>
+                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[7].name}</span> <span>3/5</span>
+                                <p>{user.profiles[7].review}</p>
                             </div>
                             <div className="project-block review">
                                 <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[1].name}</span> <span>3/5</span>
@@ -50,8 +54,8 @@ class CovidBot extends React.Component {
                                 <p>{user.profiles[2].review}</p>
                             </div>
                             <div className="project-block review">
-                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[3].name}</span> <span>3/5</span>
-                                <p>{user.profiles[3].review}</p>
+                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[8].name}</span> <span>3/5</span>
+                                <p>{user.profiles[8].review}</p>
                             </div>
                             <div className="project-block review">
                                 <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[4].name}</span> <span>3/5</span>

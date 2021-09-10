@@ -3,9 +3,13 @@
 
     "profiles": [
         {"name": "Tony Stargaze", "review":"I like the idea, but lack in execution"},
-        {"name": "Johhny Iceman", "review":"Its a little hard to addapt to using the app since it lacks full support for credit cards and other payment methods"},
         {"name": "Johhny Iceman", "review":"However, I can confirm the criticism regarding handling and processing of other buyers. The user manual and packaging are also cheap."},
         {"name": "Ivan Mekulin", "review":"Domačice su uvijek bile moja omiljena čokoladna biskvit desert poslastica nakon ručka koju ću uzimati redovito nakon objeda u podnevnim satima svakoga dana"},
-        {"name": "Stipe Trebalo", "review":"The product sounds all good on paper but so far it lacks support and functionality."}
+        {"name": "Stipe Trebalo", "review":"The product sounds all good on paper but so far it lacks support and functionality."},
+        {"name": "Pavle Arbanas", "review":"Didn't get free GPU. Not satisfied."},
+        {"name": "Luka Šimić", "review":"Grejt for discord server bilding!"},
+        {"name": "Juxzera Bušljetovich", "review":"Great CS:GO bunnyhop script."},
+        {"name": "Dežan Heartzman", "review":"Like this user's data base."},
+        {"name": "Vuk Davoša", "review":"Totalno nisam radio na ovom projektu"}
     ]
 }

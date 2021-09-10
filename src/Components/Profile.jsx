@@ -7,6 +7,11 @@ import user from '../Data/Users.json';
 import cUser from '../Data/CorporateUser.json';
 
 class Profile extends React.Component {
+
+    nextPath(path) {
+        this.props.history.push(path);
+      }
+
     render(){ return(
         <div id="base">
             <table id="banner">
@@ -14,8 +19,8 @@ class Profile extends React.Component {
                         <td width="50px"><img id="logo" src={cUser.logo} alt="LOGO"></img></td>
                         <td width="100px"><div id="corpName">{cUser.name}</div></td>
                         <td><div className="nav-buttons">
-                            <button className="nav-button">Home</button>
-                            <button className="nav-button">Challanges</button>
+                            <button className="nav-button" onClick={() => this.nextPath('/main')}>Home</button>
+                            <button className="nav-button">Challenges</button>
                             <button className="nav-button">Projects</button>
                         </div></td>
                         <td><a href="#profile"><img src={pUser.image} alt="Pfp" id="smallpp"></img></a></td>
@@ -27,10 +32,11 @@ class Profile extends React.Component {
                     <img id="bigpp" src={pUser.image} alt="Logo.png" />
                     <p id="title">{pUser.name}</p>
                     <p id="about">{pUser.tag}</p>
+                    <p id="about"><b>{pUser.aboutme}</b></p>
                 </div>
                 <div id="social">
                     <img className="icon" src="http://4.bp.blogspot.com/-Rm3giw7mj_8/VQLP1ZWAVwI/AAAAAAAAXw0/WPoJhWJu_aY/s1600/facebook-iOS-icon.png"></img>
-                    <img className="icon" src="https://cdn.icon-icons.com/icons2/1906/PNG/512/iconfinder-reddit-4550872_121349.png"></img>
+                    <img className="icon" src="https://th.bing.com/th/id/R.4fd5bc151d032f2e16b92f032ae6fb02?rik=ReJQix%2fYrKgeXw&riu=http%3a%2f%2flogok.org%2fwp-content%2fuploads%2f2014%2f08%2fTwitter-logo-bird_logo_2012.png&ehk=%2fm%2fj3zBDsMNBXd4I77UkMaA%2bUg%2b6uE%2fBIUXoHnbw7SU%3d&risl=&pid=ImgRaw&r=0"></img>
                     <img className="icon" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/github-4096-black.png"></img>
                 </div>
                 <div id="contact-info">
@@ -45,8 +51,8 @@ class Profile extends React.Component {
                     <span><b>Generated :</b> <i> A solid project with a lot of potential but lacks backing and support for payment</i></span>
                     <hr id="span"></hr>
                     <div className="project-block review">
-                        <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[0].name}</span> <span>3/5</span>
-                        <p>{user.profiles[0].review}</p>
+                        <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[3].name}</span> <span>3/5</span>
+                        <p>{user.profiles[3].review}</p>
                     </div>
                 </div>
                 <div className="project-block container-project">
@@ -72,7 +78,6 @@ class Profile extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className="bottomBar">{cUser.slogan} <br/> <p className="inc-name">GoleTete.Inc</p></div>
         </div>
     )};
 }

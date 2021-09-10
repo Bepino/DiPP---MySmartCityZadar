@@ -1,7 +1,7 @@
 import React from 'react';
 import './Profile.css';
 import './Project.css';
-import { useHistory } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 
 import pUser from  '../Data/PersonalUser.json';
@@ -11,9 +11,9 @@ import user from '../Data/Users.json';
 
 class FreeBank extends React.Component {
 
-    handleClick() {
-        this.props.history.push('/main');
-    }
+    nextPath(path) {
+        this.props.history.push(path);
+      }
     
     render() {
         return(
@@ -23,8 +23,8 @@ class FreeBank extends React.Component {
                         <td width="50px"><img id="logo" src={cUser.logo} alt="LOGO"></img></td>
                         <td width="100px"><div id="corpName">{cUser.name}</div></td>
                         <td><div className="nav-buttons">
-                            <button className="nav-button" onClick={this.handleClick()}>Home</button>
-                            <button className="nav-button">Challanges</button>
+                            <button className="nav-button" onClick={() => this.nextPath('/main')}>Home</button>
+                            <button className="nav-button">Challenges</button>
                             <button className="nav-button">Projects</button>
                         </div></td>
                         <td><a href="#profile"><img src={pUser.image} alt="Pfp" id="smallpp"></img></a></td>
@@ -54,16 +54,16 @@ class FreeBank extends React.Component {
                                 <p>{user.profiles[1].review}</p>
                             </div>
                             <div className="project-block review">
-                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[2].name}</span> <span>3/5</span>
-                                <p>{user.profiles[2].review}</p>
+                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[6].name}</span> <span>3/5</span>
+                                <p>{user.profiles[6].review}</p>
                             </div>
                             <div className="project-block review">
                                 <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[3].name}</span> <span>3/5</span>
                                 <p>{user.profiles[3].review}</p>
                             </div>
                             <div className="project-block review">
-                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[4].name}</span> <span>3/5</span>
-                                <p>{user.profiles[4].review}</p>
+                                <img className="icon" src={user.profile} alt="user"></img> <span>{user.profiles[5].name}</span> <span>3/5</span>
+                                <p>{user.profiles[5].review}</p>
                             </div>
                         </div>
                     </div>
