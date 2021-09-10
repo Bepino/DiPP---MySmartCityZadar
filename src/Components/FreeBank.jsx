@@ -1,6 +1,8 @@
 import React from 'react';
 import './Profile.css';
 import './Project.css';
+import { useHistory } from "react-router-dom";
+
 
 import pUser from  '../Data/PersonalUser.json';
 import cUser from '../Data/CorporateUser.json';
@@ -8,6 +10,11 @@ import projects from '../Data/projects.json';
 import user from '../Data/Users.json';
 
 class FreeBank extends React.Component {
+
+    handleClick() {
+        this.props.history.push('/main');
+    }
+    
     render() {
         return(
             <div id="base">
@@ -16,7 +23,7 @@ class FreeBank extends React.Component {
                         <td width="50px"><img id="logo" src={cUser.logo} alt="LOGO"></img></td>
                         <td width="100px"><div id="corpName">{cUser.name}</div></td>
                         <td><div className="nav-buttons">
-                            <button className="nav-button">Home</button>
+                            <button className="nav-button" onClick={this.handleClick()}>Home</button>
                             <button className="nav-button">Challanges</button>
                             <button className="nav-button">Projects</button>
                         </div></td>
@@ -31,6 +38,7 @@ class FreeBank extends React.Component {
                         <p  className="icon-text"><img className="icon" src="https://maxcdn.icons8.com/Share/icon/p1em/Very_Basic/contacts1600.png" alt="Members: "></img>{projects.challanges[2].members}</p>
                         <div id="files" className="block-center">
                             <p className="title">Project files</p>
+                            <p className="project-block "><img className="icon" src="https://www.shareicon.net/data/2015/09/03/95405_folder_1024x1024.png" alt="File"></img><span className="rise">Project-folder.zip</span></p>
                             <p className="project-block "><img className="icon" src="https://www.shareicon.net/data/2015/09/03/95405_folder_1024x1024.png" alt="File"></img><span className="rise">Project-folder.zip</span></p>
                         </div>
                         <div id="reviews" className="project-block block-center">
