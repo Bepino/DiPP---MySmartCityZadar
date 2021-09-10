@@ -10,9 +10,5 @@
     },
     "mail" : "hrvojehrvat@gmail.com",
     "phone" : "+385 96 999 999 9999",
-    "aboutme" : "I am a small freelance developer from Donja Našica",
-    "projects": [
-        {"name": "RedditCrawler", "about":"A subbredit image crawler"},
-        {"name": "CovidBot", "about":"Daily cases information"}
-    ]
+    "aboutme" : "I am a small freelance developer from Donja Našica"
 }

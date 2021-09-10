@@ -1,0 +1,120 @@
+#freebank-body {
+    margin: auto;
+}
+
+#base-body {
+    margin-top: 35px;
+    padding-right: 10px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 25px;
+    width: 60%;
+}
+
+.profile-review {
+    margin-top: 20px;
+}
+
+.ProjectName {
+    text-align: center;
+    font: 900 30px Sans-Serif
+}
+
+.icon {
+    align-items: center;
+    padding-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+#bmp-imp {
+    margin-top: 150px !important;
+}
+
+#reviews {
+    background-color: #124aa1;
+    color: aliceblue;
+}
+
+
+.review {
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.block-center {
+    width: 85%;
+    margin: auto;
+}
+
+.span {
+    width: 95%;
+    height: 2px;
+    background-color:black;
+    border-width: 0px;
+    border-radius: 25px;
+}
+
+.icon-text {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.rise {
+    padding-left: 15px;
+}
+
+.center {
+    text-align: center;
+    font-weight: 100;
+    color: gray;
+    font-size: 20px;
+}
+
+.container-project {
+    margin:10px;
+}
+
+.container-text {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects {
+    margin: 10px;
+}
+
+.name-break {
+    width: 75%;
+    height: 5px;
+    background-color:#021B79;
+    border-width: 0px;
+    border-radius: 25px;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#userinfo {
+    margin: 20px;
+    padding-left: 30px;
+    background-color: aliceblue;
+    float: left;
+    width: 25%;
+    border-radius: 25px;
+}
+
+#bigpp {
+    border-radius: 25px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
